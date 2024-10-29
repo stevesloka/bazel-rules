@@ -47,7 +47,7 @@ toolchain(
 toolchain(
     name = "yq_linux_toolchain_arm64",
     exec_compatible_with = [
-        "@platforms//os:linux",
+        "@platforms//os:osx",
         "@platforms//cpu:arm64",
     ],
     target_compatible_with = [
