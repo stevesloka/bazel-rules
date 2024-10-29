@@ -33,7 +33,7 @@ yq_toolchain(
 toolchain(
     name = "yq_linux_toolchain",
     exec_compatible_with = [
-        "@platforms//os:darwin",
+        "@platforms//os:osx",
         "@platforms//cpu:arm64",
     ],
     target_compatible_with = [
