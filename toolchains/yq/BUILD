@@ -13,6 +13,12 @@ yq_toolchain(
 )
 
 yq_toolchain(
+    name = "yq_linux_arm64",
+    tool = "@yq_v2.4.1_linux//file",
+    visibility = ["//visibility:public"],
+)
+
+yq_toolchain(
     name = "yq_osx",
     tool = "@yq_v2.4.1_darwin//file",
     visibility = ["//visibility:public"],
@@ -48,7 +54,7 @@ toolchain(
         "@platforms//os:linux",
         "@platforms//cpu:arm64",
     ],
-    toolchain = ":yq_linux",
+    toolchain = ":yq_linux_arm64",
     toolchain_type = ":toolchain_type",
 )
 
