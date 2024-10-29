@@ -34,11 +34,11 @@ toolchain(
     name = "yq_linux_toolchain",
     exec_compatible_with = [
         "@platforms//os:linux",
-        "@platforms//cpu:x86_64",
+        "@platforms//cpu:arm64",
     ],
     target_compatible_with = [
         "@platforms//os:linux",
-        "@platforms//cpu:x86_64",
+        "@platforms//cpu:arm64",
     ],
     toolchain = ":yq_linux",
     toolchain_type = ":toolchain_type",
